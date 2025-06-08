@@ -1,0 +1,16 @@
+Motion = 1349
+Session = 753
+LapData = 1285
+Event = 45
+Participants = 1284
+CarSetups = 1133
+CarTelemetry = 1352
+CarStatus = 1239
+FinalClassification = 1042
+LobbyInfo = 954
+CarDamage = 1041
+SessionHistory = 1460
+TyreSets = 231
+MotionEx = 273
+TimeTrial = 101
+LapPositions = 1131
