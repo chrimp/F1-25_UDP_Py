@@ -24,7 +24,8 @@ def sort_packet(data):
     elif len(data) == LapData:
         return Packet_structs.PacketLapData
     elif len(data) == Event:
-        return Packet_structs.PacketEventData
+        return None
+        #return Packet_structs.PacketEventData
     elif len(data) == Participants:
         return Packet_structs.PacketParticipantsData
     elif len(data) == CarSetups:
