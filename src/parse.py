@@ -7,8 +7,6 @@ def _sigint_handler(_, _):
     print("Exiting...")
     sys.exit(0)
 
-signal.signal(signal.SIGINT, _sigint_handler)
-
 IP_ADDR = '127.0.0.1'
 PORT = 20777
 socket.setdefaulttimeout(1/360)
@@ -69,6 +67,7 @@ def getPacket():
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
+    signal.signal(signal.SIGINT, _sigint_handler)
     while True:
         try:
             data, addr = sock.recvfrom(1500)
